@@ -1,0 +1,127 @@
+.orb-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+.orb-container canvas {
+  display: block;
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: auto;
+}
+
+.simple-auth-btn {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+}
+.simple-auth-btn:hover {
+  background: #f3f3f3;
+}
+
+/* Button row spacing responsive */
+.auth-btn-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .auth-btn-row {
+    gap: 0.75rem;
+  }
+}
+
+.login-auth-btn {
+  background: rgba(115, 82, 168, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0.4rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+}
+.login-auth-btn:hover {
+  background: rgba(66, 161, 168, 0.9);
+}
+
+.signup-auth-btn {
+  background: rgba(93, 130, 171, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0.4rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+}
+.signup-auth-btn:hover {
+  background: rgba(180, 180, 180, 0.7);
+}
+
+@media (max-width: 480px) {
+  .login-auth-btn,
+  .signup-auth-btn {
+    padding: 0.35rem 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    margin: 0 0.25rem;
+  }
+}
+
+.auth-form-green {
+  background: rgba(152, 92, 195, 0.7);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 4px 32px 0 rgba(60,120,60,0.15);
+}
+
+.auth-form-grey {
+  background: rgba(180, 180, 180, 0.5);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 4px 32px 0 rgba(180,180,180,0.10);
+}
+
+.auth-form-input {
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #2e2e2e;
+  color: #9736cf;
+  font-size: 1rem;
+  text-align: center;
+  pointer-events: auto;
+} 
